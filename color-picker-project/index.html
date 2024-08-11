@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="uft-8">
+    <title>Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+</head>
+<body>
+<section class="pt-10 bg-fuchsia-200">
+    <div class="" >
+        <h1 class="pb-10 text-center text-5xl">This is my color picker</h1>
+    </div>
+</section>
+
+<section class="flex justify-center pb-5 pt-5 bg-slate-200">
+    <div class="color-box-container">
+        <div class="rounded-full" id="color-box"></div>
+    </div>
+</section>
+
+
+<section class= "pb-20 pt-20 flex justify-center items-center bg-yellow-200">
+     <div class="bg-red picker-form-container">
+          <label class="px-5 py-2 rounded-md bg-red-500 border-2 border-red-600" for="red">RED</label>
+          <input type="range"
+                 id ="red"
+                 value = "0"
+                 min = "0"
+                 max ="255"
+                 class= "picker">
+         <span class="pr-2" id="redVal">0</span>
+
+       </div>
+       <div class="picker-control">
+           <label class="px-5 py-2 rounded-md bg-green-500 border-2 border-green-600" for="green">Green</label>
+           <input type="range"
+                  id="green"
+                  value = "0"
+                  min="0"
+                  max = "255"
+                  class="picker">
+           <span class="pr-2" id="greenVal">0</span>
+       </div>
+     <div class="picker-control">
+         <label class="px-5 py-2 rounded-md bg-blue-500 border-2 border-blue-600" for="blue">Blue</label>
+         <input type="range"
+                id="blue"
+                min = "0"
+                value = "0"
+                max = "255"
+                class="picker">
+         <span id="blueVal">0</span>
+     </div>
+
+</section>
+
+<section class="">
+<div class="pb-40 bg-cyan-200">Sample</div>
+</section>
+
+
+
+
+</body>
+</html>
